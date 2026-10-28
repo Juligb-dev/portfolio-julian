@@ -79,11 +79,9 @@ export function Header() {
         <Link className="brand" to="/" aria-label={profile.name} onClick={() => setOpen(false)}>
           <span className="brand-mark" aria-hidden="true">
             {profile.initials}
-            <span className="brand-dot" />
           </span>
           <span className="brand-text">
             <span className="brand-name">{profile.name}</span>
-            <span className="brand-role">{pick(profile.role, lang)}</span>
           </span>
         </Link>
 

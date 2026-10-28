@@ -10,8 +10,8 @@ export function pick(value: L, lang: Lang): string {
 }
 
 export const profile = {
-  name: 'Julian Gualberto',
-  shortName: 'Julian',
+  name: 'Julián Gualberto',
+  shortName: 'Julián',
   initials: 'JG',
   handle: 'Juligb-dev',
   avatar: '/avatar.jpg',
@@ -20,20 +20,20 @@ export const profile = {
   // Completar con el email real antes de publicar.
   email: '',
   role: {
-    es: 'Desarrollador full-stack',
-    en: 'Full-stack developer',
+    es: 'Desarrollador Full Stack',
+    en: 'Full Stack Developer',
   } satisfies L,
   availability: {
-    es: 'Disponible para nuevos proyectos',
-    en: 'Available for new projects',
+    es: 'Disponible para proyectos',
+    en: 'Open to projects',
   } satisfies L,
   headline: {
-    es: 'Construyo productos web de punta a punta.',
-    en: 'I build web products end to end.',
+    es: 'Armo productos web reales, de punta a punta.',
+    en: 'I build real web products from idea to ship.',
   } satisfies L,
   intro: {
-    es: 'Diseño y desarrollo experiencias con foco en el producto: interfaces cuidadas, datos confiables y una base técnica que aguanta producción.',
-    en: 'I design and build product-focused experiences: considered interfaces, reliable data, and a technical foundation that holds up in production.',
+    es: 'Me gusta ir directo al grano: entender el problema, armarlo bien y que funcione como tiene que funcionar.',
+    en: 'I like to cut to the chase: understand the problem, build it right, and make sure it actually works.',
   } satisfies L,
   location: {
     es: 'Remoto',
@@ -57,27 +57,27 @@ export const ui = {
   theme: { es: 'Cambiar tema', en: 'Toggle theme' },
   themeDark: { es: 'Tema oscuro', en: 'Dark theme' },
   themeLight: { es: 'Tema claro', en: 'Light theme' },
-  ctaWork: { es: 'Ver proyectos', en: 'See selected work' },
-  ctaContact: { es: 'Hablemos', en: 'Let’s talk' },
+  ctaWork: { es: 'Ver proyectos', en: 'See projects' },
+  ctaContact: { es: 'Hablemos', en: 'Get in touch' },
   ctaCv: { es: 'Ver CV', en: 'View CV' },
-  ctaGithub: { es: 'Escribime por GitHub', en: 'Message me on GitHub' },
+  ctaGithub: { es: 'Escribime por GitHub', en: 'Reach me on GitHub' },
   ctaSite: { es: 'Ver sitio actual', en: 'Visit current site' },
   backHome: { es: 'Volver al inicio', en: 'Back home' },
   nextProject: { es: 'Siguiente proyecto', en: 'Next project' },
-  viewCase: { es: 'Ver caso de estudio', en: 'View case study' },
+  viewCase: { es: 'Ver proyecto', en: 'View project' },
   viewLive: { es: 'Ver en vivo', en: 'View live' },
-  viewRepo: { es: 'Ver repositorio', en: 'View repository' },
-  privateRepo: { es: 'Repo privado', en: 'Private repository' },
-  scroll: { es: 'Scrolleá para explorar', en: 'Scroll to explore' },
+  viewRepo: { es: 'Ver repositorio', en: 'View repo' },
+  privateRepo: { es: 'Repo privado', en: 'Private repo' },
+  scroll: { es: 'Seguir viendo', en: 'Scroll down' },
   available: { es: 'Disponible', en: 'Available' },
-  builtWith: { es: 'Diseñado y desarrollado por', en: 'Designed and developed by' },
+  builtWith: { es: 'Hecho por', en: 'Built by' },
   rights: { es: 'Todos los derechos reservados.', en: 'All rights reserved.' },
   print: { es: 'Imprimir / Guardar PDF', en: 'Print / Save PDF' },
   emailCopied: { es: 'Email copiado', en: 'Email copied' },
   copyEmail: { es: 'Copiar email', en: 'Copy email' },
   noEmail: {
-    es: 'El email directo está en camino. Por ahora, escribime por GitHub.',
-    en: 'A direct email is on the way. For now, reach me on GitHub.',
+    es: 'Por ahora escribime por GitHub.',
+    en: 'Reach me on GitHub for now.',
   },
   project: { es: 'Proyecto', en: 'Project' },
   role: { es: 'Rol', en: 'Role' },
@@ -99,16 +99,16 @@ export const ui = {
 
 export const heroStats = [
   {
-    value: '03',
-    label: { es: 'productos full-stack', en: 'full-stack products' } satisfies L,
+    value: '01',
+    label: { es: 'Producto estrella', en: 'Flagship product' } satisfies L,
   },
   {
     value: '675+',
-    label: { es: 'tests automatizados en SKUL', en: 'automated tests in SKUL' } satisfies L,
+    label: { es: 'Tests en SKUL', en: 'Tests in SKUL' } satisfies L,
   },
   {
     value: '966',
-    label: { es: 'materias modeladas en EduCampus', en: 'subjects modeled in EduCampus' } satisfies L,
+    label: { es: 'Materias en EduCampus', en: 'Subjects in EduCampus' } satisfies L,
   },
 ]
 
@@ -132,43 +132,43 @@ export const marquee = [
 export const sections = {
   work: {
     index: '01',
-    label: { es: 'Trabajo seleccionado', en: 'Selected work' } satisfies L,
-    title: { es: 'Productos, no pantallas.', en: 'Products, not screens.' } satisfies L,
+    label: { es: 'Proyectos', en: 'Projects' } satisfies L,
+    title: { es: 'Lo que armé', en: 'What I’ve built' } satisfies L,
     body: {
-      es: 'Tres proyectos con problemas distintos: vender sin sobrevender, ordenar contenido educativo a escala y digitalizar una operación que vivía en planillas.',
-      en: 'Three projects with different problems: selling without overselling, organizing educational content at scale, and digitizing an operation that lived in spreadsheets.',
+      es: 'SKUL es mi proyecto estrella, 100% funcional con pagos reales. EduCampus está en desarrollo y siendo testeado por algunos estudiantes. El de flota fue un trabajo de facultad.',
+      en: 'SKUL is my flagship, fully functional with real payments. EduCampus is in development and being tested by students. The fleet app was a uni project.',
     } satisfies L,
   },
   capabilities: {
     index: '02',
-    label: { es: 'Capacidades', en: 'Capabilities' } satisfies L,
-    title: { es: 'Del dato a la interfaz.', en: 'From data to interface.' } satisfies L,
+    label: { es: 'Stack', en: 'Stack' } satisfies L,
+    title: { es: 'Con qué trabajo', en: 'What I work with' } satisfies L,
     body: {
-      es: 'Me muevo cómodo en todo el recorrido: modelo el dato, diseño el flujo, construyo la UI y dejo la lógica crítica del lado del servidor.',
-      en: 'I’m comfortable across the whole path: modeling data, designing the flow, building the UI, and keeping critical logic on the server.',
+      es: 'Voy de punta a punta: diseño, frontend, backend y cuido lo sensible del lado del servidor.',
+      en: 'Full stack: UI, frontend, backend, keeping sensitive logic server-side.',
     } satisfies L,
   },
   process: {
     index: '04',
-    label: { es: 'Cómo trabajo', en: 'How I work' } satisfies L,
-    title: { es: 'Entender, construir, endurecer.', en: 'Understand, build, harden.' } satisfies L,
+    label: { es: 'Forma', en: 'Approach' } satisfies L,
+    title: { es: 'Directo', en: 'Direct' } satisfies L,
     body: {
-      es: 'No empiezo por el framework. Empiezo por el problema y por lo que tiene que pasar para que el producto sea confiable.',
-      en: 'I don’t start with the framework. I start with the problem and with what has to happen for the product to be reliable.',
+      es: 'Entiendo el problema, lo armo y lo dejo funcionando bien.',
+      en: 'Understand the problem, build it, make sure it works.',
     } satisfies L,
   },
   about: {
     index: '03',
     label: { es: 'Sobre mí', en: 'About' } satisfies L,
-    title: { es: 'Producto, diseño y engineering en la misma conversación.', en: 'Product, design, and engineering in the same conversation.' } satisfies L,
+    title: { es: 'Sobre mí', en: 'About' } satisfies L,
   },
   contact: {
     index: '05',
     label: { es: 'Contacto', en: 'Contact' } satisfies L,
-    title: { es: '¿Construimos algo?', en: 'Shall we build something?' } satisfies L,
+    title: { es: 'Hablemos', en: 'Get in touch' } satisfies L,
     body: {
-      es: 'Estoy disponible para desarrollos full-stack, productos web y colaboraciones. Si tenés una idea o un problema para resolver, escribime.',
-      en: 'I’m available for full-stack work, web products, and collaborations. If you have an idea or a problem to solve, get in touch.',
+      es: 'Si querés hablar de un proyecto, escribime por GitHub.',
+      en: 'If you’d like to talk about a project, reach out via GitHub.',
     } satisfies L,
   },
 }
@@ -228,32 +228,32 @@ export const processSteps = [
     number: '01',
     title: { es: 'Entender', en: 'Understand' } satisfies L,
     body: {
-      es: 'Problema, usuarios, restricciones y qué significa que funcione. Antes de escribir código, dejo claro qué no puede fallar.',
-      en: 'Problem, users, constraints, and what “working” means. Before writing code, I make clear what cannot fail.',
+      es: 'Veo el problema claro y qué tiene que resolverse.',
+      en: 'Get the problem straight and what needs to be solved.',
     } satisfies L,
   },
   {
     number: '02',
-    title: { es: 'Diseñar', en: 'Design' } satisfies L,
+    title: { es: 'Pensar', en: 'Plan' } satisfies L,
     body: {
-      es: 'Flujos, arquitectura y una interfaz que no necesite explicación. Prototipo lo suficiente para descubrir los casos raros.',
-      en: 'Flows, architecture, and an interface that needs no explanation. I prototype enough to discover the edge cases.',
+      es: 'Flujos, datos y decisiones. Lo justo y necesario.',
+      en: 'Flows, data and decisions. Keep it simple.',
     } satisfies L,
   },
   {
     number: '03',
-    title: { es: 'Construir', en: 'Build' } satisfies L,
+    title: { es: 'Armar', en: 'Build' } satisfies L,
     body: {
-      es: 'Código tipado, componentes reutilizables y datos validados. La lógica sensible vive del lado del servidor.',
-      en: 'Typed code, reusable components, and validated data. Sensitive logic lives on the server.',
+      es: 'Código limpio, tipado y con lógica sensible del lado del servidor.',
+      en: 'Clean, typed code with sensitive logic on the server.',
     } satisfies L,
   },
   {
     number: '04',
-    title: { es: 'Endurecer', en: 'Harden' } satisfies L,
+    title: { es: 'Probar y ajustar', en: 'Test & tweak' } satisfies L,
     body: {
-      es: 'Tests, reglas, accesibilidad y deploy. Lo que se rompe, se arregla antes de salir; lo que puede abusarse, se limita.',
-      en: 'Tests, rules, accessibility, and deploy. What breaks is fixed before launch; what can be abused is limited.',
+      es: 'Reviso, ajusto y dejo que funcione bien.',
+      en: 'Check, tweak, and make sure it runs right.',
     } satisfies L,
   },
 ]
@@ -261,31 +261,31 @@ export const processSteps = [
 export const about = {
   body: [
     {
-      es: 'Trabajo en la intersección entre producto, diseño y engineering. Me gusta entender el problema antes de escribir código, construir interfaces que se sientan simples y dejar la lógica crítica del lado del servidor.',
-      en: 'I work at the intersection of product, design, and engineering. I like to understand the problem before writing code, build interfaces that feel simple, and keep critical logic on the server.',
+      es: 'Soy desarrollador full stack. Me gusta armar cosas que se usan de verdad.',
+      en: 'I’m a full stack developer. I like building things people actually use.',
     },
     {
-      es: 'Vengo de proyectos donde no alcanza con que la pantalla se vea bien: hay que cobrar, validar stock, proteger datos, escribir tests y pensar qué pasa cuando algo falla.',
-      en: 'I come from projects where a good-looking screen is not enough: you have to charge, validate stock, protect data, write tests, and think about what happens when something fails.',
+      es: 'SKUL es mi proyecto estrella: lo armé completo, con pagos reales, stock, cupones y todo lo necesario para que funcione.',
+      en: 'SKUL is my flagship — I built it end to end with real payments, stock, coupons, and everything it needs to run.',
     },
     {
-      es: 'Actualmente estoy construyendo EduCampus AR, una plataforma educativa para estudiantes universitarios, y SKUL, una tienda de ropa con pagos y logística reales.',
-      en: 'I’m currently building EduCampus AR, an educational platform for university students, and SKUL, a clothing store with real payments and logistics.',
+      es: 'Ahora estoy con EduCampus AR, testeando con estudiantes. También hay un par de proyectos más que voy sumando.',
+      en: 'Right now I’m working on EduCampus AR, testing it with students. I’ll add more projects as I go.',
     },
   ] satisfies L[],
   currently: [
     {
-      name: 'EduCampus AR',
+      name: 'SKUL',
       detail: {
-        es: 'EdTech · 966 materias · 51 casos',
-        en: 'EdTech · 966 subjects · 51 case studies',
+        es: 'E-commerce · 100% funcional',
+        en: 'E-commerce · Fully shipped',
       } satisfies L,
     },
     {
-      name: 'SKUL',
+      name: 'EduCampus AR',
       detail: {
-        es: 'E-commerce · pagos · logística',
-        en: 'E-commerce · payments · logistics',
+        es: 'EdTech · En desarrollo y testeado',
+        en: 'EdTech · In dev, tested by students',
       } satisfies L,
     },
   ],

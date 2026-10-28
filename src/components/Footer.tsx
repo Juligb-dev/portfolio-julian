@@ -16,11 +16,9 @@ export function Footer() {
           <Link className="brand brand--footer" to="/" aria-label={profile.name}>
             <span className="brand-mark" aria-hidden="true">
               {profile.initials}
-              <span className="brand-dot" />
             </span>
             <span className="brand-text">
               <span className="brand-name">{profile.name}</span>
-              <span className="brand-role">{pick(profile.role, lang)}</span>
             </span>
           </Link>
           <p className="site-footer__note">

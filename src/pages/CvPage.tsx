@@ -7,7 +7,7 @@ import { pick, profile, skills, ui } from '@/data/site'
 import { useLang } from '@/lib/i18n-context'
 
 const cvUi = {
-  kicker: { es: 'Curriculum vitae', en: 'Curriculum vitae' },
+  kicker: { es: 'Currículum Vitae', en: 'Curriculum Vitae' },
   profile: { es: 'Perfil', en: 'Profile' },
   selected: { es: 'Proyectos seleccionados', en: 'Selected projects' },
   skills: { es: 'Habilidades', en: 'Skills' },
@@ -16,8 +16,8 @@ const cvUi = {
   updated: { es: 'Actualizado', en: 'Updated' },
   updatedValue: { es: 'octubre de 2026', en: 'October 2026' },
   summary: {
-    es: 'Desarrollador full-stack con foco en producto. Construyo aplicaciones web completas: interfaces cuidadas, datos validados y lógica sensible del lado del servidor. Experiencia en e-commerce con pagos reales, plataformas educativas a escala y herramientas operativas.',
-    en: 'Product-focused full-stack developer. I build complete web applications: considered interfaces, validated data, and sensitive logic on the server. Experience in e-commerce with real payments, education platforms at scale, and operational tools.',
+    es: 'Desarrollador full stack. Armo aplicaciones web completas, de punta a punta. SKUL con pagos reales, EduCampus en desarrollo.',
+    en: 'Full stack developer. I build complete web apps end to end. SKUL with real payments, EduCampus in development.',
   },
 }
 

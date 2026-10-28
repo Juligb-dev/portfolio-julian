@@ -35,8 +35,8 @@ export function Home() {
 
   const seoDescription = pick(
     {
-      es: 'Portfolio de Julian Gualberto, desarrollador full-stack. E-commerce, EdTech y herramientas operativas con interfaces cuidadas, datos confiables y una base técnica lista para producción.',
-      en: 'Portfolio of Julian Gualberto, full-stack developer. E-commerce, EdTech, and operational tools with considered interfaces, reliable data, and a production-ready technical foundation.',
+      es: 'Portfolio de Julián Gualberto, desarrollador full stack. SKUL con pagos reales, EduCampus en desarrollo.',
+      en: 'Portfolio of Julián Gualberto, full stack developer. SKUL with real payments, EduCampus in development.',
     },
     lang,
   )
@@ -55,7 +55,7 @@ export function Home() {
   return (
     <>
       <Seo
-        title="Julian Gualberto — Full-stack developer"
+        title="Julián Gualberto — Full-stack Engineer"
         description={seoDescription}
         path="/"
         jsonLd={jsonLd}
@@ -138,9 +138,9 @@ export function Home() {
                   <span className="code-muted">const</span> julian{' '}
                   <span className="code-op">=</span> {'{'}
                   {'\n'}  role:{' '}
-                  <span className="code-string">'full-stack developer'</span>,
+                  <span className="code-string">'full stack developer'</span>,
                   {'\n'}  focus:{' '}
-                  <span className="code-string">'product + engineering'</span>,
+                  <span className="code-string">'build & ship'</span>,
                   {'\n'}  stack: [
                   {'\n'}    <span className="code-string">'react'</span>,{' '}
                   <span className="code-string">'typescript'</span>,{' '}

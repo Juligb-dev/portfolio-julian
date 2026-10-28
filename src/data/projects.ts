@@ -44,14 +44,14 @@ export const projects: Project[] = [
   {
     slug: 'skul',
     name: 'SKUL',
-    category: { es: 'E-commerce · Producto', en: 'E-commerce · Product' },
+    category: { es: 'E-commerce · Proyecto estrella', en: 'E-commerce · Flagship' },
     tagline: {
-      es: 'Una tienda de ropa con drops, stock real y pagos en producción.',
-      en: 'A clothing store with drops, real stock, and live payments.',
+      es: 'Tienda de ropa con drops, stock real y pagos reales.',
+      en: 'Clothing store with drops, real stock and real payments.',
     },
     description: {
-      es: 'E-commerce completo con catálogo, carrito, cupones, gift cards y panel de administración. El checkout cobra con Mercado Pago y el backend valida precios, stock y pagos antes de confirmar una orden.',
-      en: 'A complete e-commerce experience with catalog, cart, coupons, gift cards, and an admin panel. Checkout charges with Mercado Pago, and the backend validates prices, stock, and payments before confirming an order.',
+      es: 'E-commerce completo con catálogo, carrito, cupones, gift cards y panel admin. Checkout con Mercado Pago, stock validado del lado del servidor y 675+ tests.',
+      en: 'Full e-commerce with catalog, cart, coupons, gift cards and admin panel. Mercado Pago checkout, server-side stock validation, 675+ tests.',
     },
     role: { es: 'Diseño y desarrollo full-stack', en: 'Design and full-stack development' },
     year: '2026',
@@ -148,14 +148,14 @@ export const projects: Project[] = [
   {
     slug: 'educampus',
     name: 'EduCampus AR',
-    category: { es: 'EdTech · Plataforma', en: 'EdTech · Platform' },
+    category: { es: 'EdTech · En desarrollo', en: 'EdTech · In development' },
     tagline: {
-      es: 'Una plataforma de aprendizaje activo para 966 materias universitarias.',
-      en: 'An active-learning platform for 966 university subjects.',
+      es: 'Plataforma para aprender con 966 materias universitarias.',
+      en: 'Learning platform covering 966 university subjects.',
     },
     description: {
-      es: 'Hub educativo con guías base, bibliografías curadas, casos guiados, simuladores y portafolio de aprendizaje. La comunidad usa Firestore con reglas estrictas y un interruptor de emergencia.',
-      en: 'An education hub with base guides, curated bibliographies, guided cases, simulators, and a learning portfolio. The community uses Firestore with strict rules and a kill switch.',
+      es: 'Hub con guías, bibliografías, casos guiados y comunidad. En desarrollo, siendo testeado por estudiantes entre 5 y 20.',
+      en: 'Hub with guides, bibliographies, guided cases and community. In development, being tested by a small group of students.',
     },
     role: {
       es: 'Producto, diseño y desarrollo full-stack',
@@ -257,14 +257,14 @@ export const projects: Project[] = [
   {
     slug: 'control-de-flotas',
     name: 'Control de Flotas',
-    category: { es: 'Operaciones · Full-stack', en: 'Operations · Full-stack' },
+    category: { es: 'Facultad · Trabajo práctico', en: 'Uni · Assignment' },
     tagline: {
-      es: 'Checklist diario de vehículos con roles, historial y estadísticas.',
-      en: 'A daily vehicle checklist with roles, history, and statistics.',
+      es: 'Checklist diario para inspección de flota.',
+      en: 'Daily vehicle inspection checklist.',
     },
     description: {
-      es: 'Una app para que choferes hagan la inspección preventiva desde el celular y los supervisores auditen la flota. Express + SQLite, sesiones con tokens, contraseñas con scrypt y exportación CSV.',
-      en: 'An app for drivers to run preventive inspections from their phones and for supervisors to audit the fleet. Express + SQLite, token sessions, scrypt-hashed passwords, and CSV export.',
+      es: 'App para que choferes hagan checklist y supervisores lo revisen. Express + SQLite, roles, sesiones y exportación CSV.',
+      en: 'App for drivers to check vehicles and supervisors to review. Express + SQLite, roles, sessions and CSV export.',
     },
     role: { es: 'Desarrollo full-stack', en: 'Full-stack development' },
     year: '2026',
