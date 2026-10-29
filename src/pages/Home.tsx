@@ -55,8 +55,8 @@ export function Home() {
   return (
     <>
       <Seo
-        title="Julián Gualberto — Full-stack Engineer"
-        description={seoDescription}
+        title="Julián Gualberto"
+        description="Desarrollador Full Stack"
         path="/"
         jsonLd={jsonLd}
       />
