@@ -35,8 +35,8 @@ export function Home() {
 
   const seoDescription = pick(
     {
-      es: 'Portfolio de Julián Gualberto, desarrollador full stack. SKUL con pagos reales, EduCampus en desarrollo.',
-      en: 'Portfolio of Julián Gualberto, full stack developer. SKUL with real payments, EduCampus in development.',
+      es: 'Julián Gualberto — Desarrollador Full Stack',
+      en: 'Julián Gualberto — Full Stack Developer',
     },
     lang,
   )
