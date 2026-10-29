@@ -258,8 +258,8 @@ export const processSteps = [
 ]
 
 export const about = {
-  body: [] satisfies L[],
-  currently: [],
+  body: [] as L[],
+  currently: [] as Array<{ name: string; detail: L }>,
 }
 
 export const contactLinks = {
