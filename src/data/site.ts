@@ -28,12 +28,12 @@ export const profile = {
     en: 'Available',
   } satisfies L,
   headline: {
-    es: 'Productos pensados para resolver.',
-    en: 'Products built to solve.',
+    es: 'Julián Gualberto',
+    en: 'Julián Gualberto',
   } satisfies L,
   intro: {
-    es: 'Voy de idea a código. Sin vueltas, con foco en que funcione bien.',
-    en: 'From idea to code. Straightforward, built to last.',
+    es: 'Desarrollador Full Stack.',
+    en: 'Full Stack Developer.',
   } satisfies L,
   location: {
     es: 'Remoto',
@@ -132,7 +132,7 @@ export const marquee = [
 export const sections = {
   work: {
     index: '01',
-    label: { es: 'Trabajos', en: 'Work' } satisfies L,
+    label: { es: 'Proyectos', en: 'Projects' } satisfies L,
     title: { es: 'Proyectos', en: 'Projects' } satisfies L,
     body: {
       es: '',
@@ -141,7 +141,7 @@ export const sections = {
   },
   capabilities: {
     index: '02',
-    label: { es: 'Tecnologías', en: 'Tech' } satisfies L,
+    label: { es: 'Stack', en: 'Stack' } satisfies L,
     title: { es: 'Stack', en: 'Stack' } satisfies L,
     body: {
       es: '',
@@ -151,7 +151,7 @@ export const sections = {
   process: {
     index: '04',
     label: { es: 'Proceso', en: 'Process' } satisfies L,
-    title: { es: 'Cómo lo hago', en: 'How I do it' } satisfies L,
+    title: { es: 'Proceso', en: 'Process' } satisfies L,
     body: {
       es: '',
       en: '',
@@ -159,8 +159,8 @@ export const sections = {
   },
   about: {
     index: '03',
-    label: { es: 'Acerca de', en: 'About' } satisfies L,
-    title: { es: 'Acerca de', en: 'About' } satisfies L,
+    label: { es: 'Sobre mí', en: 'About' } satisfies L,
+    title: { es: 'Sobre mí', en: 'About' } satisfies L,
   },
   contact: {
     index: '05',
@@ -226,7 +226,7 @@ export const principles = [
 export const processSteps = [
   {
     number: '01',
-    title: { es: 'Idea', en: 'Idea' } satisfies L,
+    title: { es: '', en: '' } satisfies L,
     body: {
       es: '',
       en: '',
@@ -234,7 +234,7 @@ export const processSteps = [
   },
   {
     number: '02',
-    title: { es: 'Diseño', en: 'Design' } satisfies L,
+    title: { es: '', en: '' } satisfies L,
     body: {
       es: '',
       en: '',
@@ -242,7 +242,7 @@ export const processSteps = [
   },
   {
     number: '03',
-    title: { es: 'Código', en: 'Code' } satisfies L,
+    title: { es: '', en: '' } satisfies L,
     body: {
       es: '',
       en: '',
@@ -250,37 +250,16 @@ export const processSteps = [
   },
   {
     number: '04',
-    title: { es: 'Entrega', en: 'Ship' } satisfies L,
+    title: { es: '', en: '' } satisfies L,
     body: {
       es: '',
-      en: '',
-    } satisfies L,
+      en: '' } satisfies L,
   },
 ]
 
 export const about = {
-  body: [
-    {
-      es: 'Desarrollador full stack basado en Argentina.',
-      en: 'Full stack developer based in Argentina.',
-    },
-  ] satisfies L[],
-  currently: [
-    {
-      name: 'SKUL',
-      detail: {
-        es: 'Tienda online con pagos reales',
-        en: 'Online store with real payments',
-      } satisfies L,
-    },
-    {
-      name: 'EduCampus AR',
-      detail: {
-        es: 'En desarrollo',
-        en: 'In development',
-      } satisfies L,
-    },
-  ],
+  body: [] satisfies L[],
+  currently: [],
 }
 
 export const contactLinks = {

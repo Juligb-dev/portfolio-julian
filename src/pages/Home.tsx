@@ -74,17 +74,15 @@ export function Home() {
             <Reveal delay={70}>
               <p className="hero-eyebrow">
                 {pick(profile.role, lang)}
-                <span className="hero-eyebrow__sep">/</span>
-                {pick(profile.location, lang)}
               </p>
             </Reveal>
 
             <Reveal delay={130}>
-              <h1 className="hero-title">{pick(profile.headline, lang)}</h1>
+              <h1 className="hero-title">Julián Gualberto</h1>
             </Reveal>
 
             <Reveal delay={190}>
-              <p className="hero-intro">{pick(profile.intro, lang)}</p>
+              <p className="hero-intro">Desarrollador Full Stack</p>
             </Reveal>
 
             <Reveal delay={250}>
