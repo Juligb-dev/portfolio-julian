@@ -4,132 +4,112 @@ const projects = [
   {
     num: '01',
     name: 'SKUL',
-    year: '2026',
-    type: 'e-commerce',
+    meta: 'e-commerce · pagos reales',
     href: 'https://skullt.web.app/',
-    img: '/proyectos/skul-home.jpg',
+    cover: '/proyectos/skul-home.jpg',
   },
   {
     num: '02',
     name: 'EduCampus AR',
-    year: '2026',
-    type: 'edtech',
+    meta: 'edtech · en desarrollo',
     href: 'https://educampus-ar.web.app/',
-    img: '/proyectos/educampus-home.jpg',
+    cover: '/proyectos/educampus-home.jpg',
   },
   {
     num: '03',
     name: 'Control de Flotas',
-    year: '2026',
-    type: 'tools',
+    meta: 'app · facultad',
     href: 'https://github.com/Juligb-dev/proyecto-gestion-flota',
-    img: '/proyectos/flotas-home.jpg',
+    cover: '/proyectos/flotas-home.jpg',
   },
 ]
 
-function Cursor() {
-  const cursor = useRef<HTMLDivElement>(null)
-  const [hover, setHover] = useState(false)
+function useCursor() {
+  const ref = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
+    const el = ref.current
+    if (!el) return
     const move = (e: MouseEvent) => {
-      if (!cursor.current) return
-      cursor.current.style.transform = `translate(${e.clientX}px, ${e.clientY}px) translate(-50%, -50%)`
+      el.style.left = e.clientX + 'px'
+      el.style.top = e.clientY + 'px'
     }
-
-    const over = (e: MouseEvent) => {
-      const target = e.target as HTMLElement
-      if (target.closest('a, button')) setHover(true)
-      else setHover(false)
-    }
-
     window.addEventListener('mousemove', move)
-    window.addEventListener('mouseover', over)
-    return () => {
-      window.removeEventListener('mousemove', move)
-      window.removeEventListener('mouseover', over)
-    }
+    return () => window.removeEventListener('mousemove', move)
   }, [])
 
-  return <div ref={cursor} className={`cursor ${hover ? 'cursor--hover' : ''}`} />
+  return ref
 }
 
 export default function App() {
-  const [active, setActive] = useState<string | null>(null)
+  const cursor = useCursor()
+  const [hovered, setHovered] = useState<string | null>(null)
 
   return (
-    <div className="app">
-      <Cursor />
-      <header className="header">
-        <div className="header__left">
+    <div className="site">
+      <div ref={cursor} className={`cursor ${hovered ? 'cursor--show' : ''}`} />
+      <header className="nav">
+        <div className="nav__brand">
           <span>Julián Gualberto</span>
-          <span>Full Stack Developer</span>
         </div>
-        <nav className="header__right">
-          <a href="#work">work</a>
-          <a href="#log">log</a>
-          <a href="#contact">contact</a>
-        </nav>
+        <div className="nav__items">
+          <a href="#work">Trabajos</a>
+          <a href="#info">Info</a>
+          <a href="https://github.com/Juligb-dev">GitHub</a>
+        </div>
       </header>
 
-      <main className="main">
-        <section>
-          <div className="index-row">
-            <span className="index-row__num">00</span>
-            <span className="index-row__name">index</span>
-            <span className="index-row__meta">ar</span>
-          </div>
+      <main>
+        <section className="hero">
+          <p className="hero__kicker">Full Stack Developer</p>
+          <h1 className="hero__title">Armo cosas que funcionan.</h1>
+          <p className="hero__sub">Sin rodeos.</p>
         </section>
 
-        <section id="work">
-          <div className="work-list">
+        <section id="work" className="work">
+          <div className="work__head">
+            <span>Seleccionados</span>
+          </div>
+          <div className="work__list">
             {projects.map((p) => (
               <a
                 key={p.num}
-                className="work-row"
+                className="work__row"
                 href={p.href}
                 target="_blank"
                 rel="noreferrer noopener"
-                onMouseEnter={() => setActive(p.img)}
-                onMouseLeave={() => setActive(null)}
+                onMouseEnter={() => setHovered(p.cover)}
+                onMouseLeave={() => setHovered(null)}
               >
-                <span className="work-row__num">{p.num}</span>
-                <span className="work-row__name">{p.name}</span>
-                <span className="work-row__year">{p.year}</span>
-                <span className="work-row__type">{p.type}</span>
+                <div className="work__left">
+                  <span className="work__num">{p.num}</span>
+                  <span className="work__name">{p.name}</span>
+                </div>
+                <span className="work__meta">{p.meta}</span>
               </a>
             ))}
           </div>
-          <div className={`work-preview ${active ? 'is-visible' : ''}`}>
-            {active ? <img src={active} alt="" loading="lazy" /> : null}
+          <div className={`work__preview ${hovered ? 'is-on' : ''}`}>
+            {hovered ? <img src={hovered} alt="" /> : null}
           </div>
         </section>
 
-        <section id="log">
-          <div className="log">
-            <span className="log__num">02</span>
-            <div className="log__text">
-              <p>Armo lo que tiene que funcionar.</p>
-              <p>Voy de punta a punta sin capas innecesarias.</p>
+        <section id="info" className="info">
+          <div className="info__grid">
+            <div>
+              <p>Desarrollador full stack.</p>
+              <p>Me gusta lo directo, lo práctico y que quede bien hecho.</p>
             </div>
-          </div>
-        </section>
-
-        <section id="contact">
-          <div className="contact">
-            <span className="contact__num">03</span>
-            <a className="contact__link" href="https://github.com/Juligb-dev" target="_blank" rel="noreferrer noopener">
-              <span>git</span>
-              github.com/Juligb-dev
-              <span>→</span>
-            </a>
+            <div>
+              <a href="https://github.com/Juligb-dev">github.com/Juligb-dev</a>
+            </div>
           </div>
         </section>
       </main>
 
-      <footer className="footer">
-        <span>© 2026 Julián Gualberto</span>
-        <span>build.log</span>
+      <footer className="foot">
+        <span>Buenos Aires, AR</span>
+        <span>2026</span>
       </footer>
     </div>
   )
