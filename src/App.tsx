@@ -1,9 +1,27 @@
 import { useEffect, useRef, useState } from 'react'
 
 const works = [
-  { id: '01', title: 'SKUL', cat: 'store', url: 'https://skullt.web.app/', img: '/proyectos/skul-home.jpg' },
-  { id: '02', title: 'EduCampus AR', cat: 'platform', url: 'https://educampus-ar.web.app/', img: '/proyectos/educampus-home.jpg' },
-  { id: '03', title: 'Control de Flotas', cat: 'ops', url: 'https://github.com/Juligb-dev/proyecto-gestion-flota', img: '/proyectos/flotas-home.jpg' },
+  {
+    id: '01',
+    title: 'SKUL',
+    cat: 'store',
+    url: 'https://skullt.web.app/',
+    img: '/proyectos/skul-home.jpg',
+  },
+  {
+    id: '02',
+    title: 'EduCampus AR',
+    cat: 'platform',
+    url: 'https://educampus-ar.web.app/',
+    img: '/proyectos/educampus-home.jpg',
+  },
+  {
+    id: '03',
+    title: 'Control de Flotas',
+    cat: 'ops',
+    url: 'https://github.com/Juligb-dev/proyecto-gestion-flota',
+    img: '/proyectos/flotas-home.jpg',
+  },
 ]
 
 function Cursor() {
@@ -18,7 +36,7 @@ function Cursor() {
     window.addEventListener('mousemove', move)
     return () => window.removeEventListener('mousemove', move)
   }, [])
-  return <div ref={ref} className="cursor" />
+  return <div ref={ref} className="cursor" aria-hidden="true" />
 }
 
 export default function App() {
@@ -30,7 +48,14 @@ export default function App() {
       <header className="bar">
         <div className="bar__left">Julián Gualberto</div>
         <div className="bar__right">
-          <a href="https://github.com/Juligb-dev" target="_blank" rel="noreferrer">github</a>
+          <a
+            href="https://github.com/Juligb-dev"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub (opens in a new tab)"
+          >
+            GitHub
+          </a>
         </div>
       </header>
 
@@ -40,16 +65,20 @@ export default function App() {
           <p className="mast__role">FULL STACK DEVELOPER</p>
         </section>
 
-        <section className="list">
+        <section className="list" aria-labelledby="works-title">
+          <h2 id="works-title" className="sr-only">Selected work</h2>
           {works.map((w) => (
             <a
               key={w.id}
               className="row"
               href={w.url}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
+              aria-label={`${w.id}. ${w.title} — ${w.cat} (opens in a new tab)`}
               onMouseEnter={() => setActive(w.img)}
               onMouseLeave={() => setActive(null)}
+              onFocus={() => setActive(w.img)}
+              onBlur={() => setActive(null)}
             >
               <span className="row__id">{w.id}</span>
               <span className="row__title">{w.title}</span>
@@ -64,7 +93,7 @@ export default function App() {
         <span>2026</span>
       </footer>
 
-      <div className={`imgframe ${active ? 'on' : ''}`}>
+      <div className={`imgframe ${active ? 'on' : ''}`} aria-hidden="true">
         {active && <img src={active} alt="" />}
       </div>
     </div>
