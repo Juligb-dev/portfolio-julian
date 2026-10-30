@@ -2,7 +2,7 @@
   "name": "portfolio-julian",
   "private": true,
   "version": "1.0.0",
-  "description": "Portfolio bilingüe de Julian Gualberto, desarrollador full-stack.",
+  "description": "Portfolio minimalista de Julián Gualberto, Full Stack Developer.",
   "type": "module",
   "engines": {
     "node": ">=20.19"
@@ -15,11 +15,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@fontsource-variable/jetbrains-mono": "^5.3.0",
-    "lucide-react": "^1.61.0",
     "react": "^19.3.1",
-    "react-dom": "^19.3.1",
-    "react-router-dom": "^7.18.4"
+    "react-dom": "^19.3.1"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.3.3",
